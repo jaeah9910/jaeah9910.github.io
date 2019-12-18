@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h1{
+            color:salmon;
+            background-color:rgb(252, 247, 238);
+        }
+        p{
+            color:rgb(29, 28, 28);
+            background-color:rgb(216, 210, 200);
+        }
+        .big{
+            font-size:17px;
+        }
+        #dream{
+            font-size:20px;
+        }
+    
+    </style>
 </head>
 <body>
     <h1>이재아</h1>
-    <p>강남에 살고있습니다. 연봉은 안주셔도 됩니다. <a href="https://www.naver.com">이것은 링크입니다</a></p>
-    <p>재아</p>
+    <p class="big">강남에 살고있습니다. 연봉은 안주셔도 됩니다. <a href="https://www.naver.com">이것은 링크입니다</a></p>
+    <p id="dream">제 꿈은 행복하게 잘 사는 것입니다.</p>
+    <div class="big">아직</div>
+    <button id="btn">알림</button>
+    <script>
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click',function(){
+            alert('클릭하셨군요');
+        });
+    </script>
+
 </body>
 </html>
